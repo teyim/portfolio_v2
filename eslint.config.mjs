@@ -21,19 +21,6 @@ const eslintConfig = [
     ],
     plugins: ["prettier", "jsx-a11y"],
     rules: {
-      "prettier/prettier": [
-        "error",
-        {
-          tabWidth: 2,
-          singleQuote: false,
-          printWidth: 80,
-          arrowParens: "always",
-          plugins: ["prettier-plugin-tailwindcss"],
-        },
-        {
-          usePrettierrc: false,
-        },
-      ],
       "react/react-in-jsx-scope": "off",
       "jsx-a11y/alt-text": "warn",
       "jsx-a11y/aria-props": "warn",
@@ -41,6 +28,7 @@ const eslintConfig = [
       "jsx-a11y/aria-unsupported-elements": "warn",
       "jsx-a11y/role-has-required-aria-props": "warn",
       "jsx-a11y/role-supports-aria-props": "warn",
+      "htmlWhitespaceSensitivity": "ignore",
     },
   }),
 ];
