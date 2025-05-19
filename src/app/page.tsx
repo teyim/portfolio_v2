@@ -1,103 +1,94 @@
 import Image from "next/image";
+import React from "react";
+import HeadshotImage from "public/images/headshot.webp";
+import OpenToWork from "@/components/ui/OpenToWork";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
-export default function Home() {
+const socialLinks = [
+  {
+    href: "https://twitter.com",
+    icon: <Twitter strokeWidth={1.5} />,
+    external: true,
+  },
+  {
+    href: "https://linkedin.com",
+    icon: <Linkedin strokeWidth={1.5} />,
+    external: true,
+  },
+  {
+    href: "mailto:example@email.com",
+    icon: <Mail strokeWidth={1.5} />,
+    external: false,
+  },
+  {
+    href: "https://github.com",
+    icon: <Github strokeWidth={1.5} />,
+    external: true,
+  },
+  {
+    href: "https://upwork.com",
+    icon: <span className="text-sm font-bold">Upwork</span>,
+    external: true,
+  },
+];
+
+export default function HomePage() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-[32px] sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm/6 sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-[family-name:var(--font-geist-mono)] font-semibold dark:bg-white/[.06]">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="relative w-full overflow-x-hidden">
+      <section className="relative grid h-[150px] grid-cols-3 px-[300px]">
+        <div className="base-border-color absolute top-[54px] left-0 w-full border-b"></div>
 
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="bg-foreground text-background flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent px-4 text-sm font-medium transition-colors hover:bg-[#383838] sm:h-12 sm:w-auto sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm font-medium transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:w-auto sm:px-5 sm:text-base md:w-[158px] dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="base-border-color border-x"></div>
+        <div className="base-border-color border-r"></div>
+        <div className="base-border-color border-r"></div>
+        <div className="base-border-color absolute top-36 left-0 w-full border-b"></div>
+        <h1 className="font-geist-sans absolute top-5 left-[21vw]">TEYIM.</h1>
+        <div className="absolute top-16 left-[48vw] flex gap-2">
+          <OpenToWork />
         </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section className="relative grid h-[300px] grid-cols-3 px-[300px]">
+        <div className="base-border-color col-span-2 border-x p-4">
+          <h6 className="mt-3 text-2xl">About me</h6>
+          <p className="text-slate-600">
+            I am a Frontend developer who converts eye-catching designs into
+            seamless user experiences.
+          </p>
+          <p className="mt-2 text-slate-600">
+            With 4+ years of experience, I provide value to clients by
+            converting client ideas and designs into 1:1 implementations.
+          </p>
+          <div className="x-2 mt-4 ml-auto w-1/2">
+            <h6 className="mt-3 text-right text-lg">Find Me On</h6>
+            <div className="mt-3 flex justify-end gap-4">
+              {socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="rounded-full p-2 transition-all duration-300 hover:scale-110 hover:bg-slate-50 hover:text-slate-600 hover:shadow-sm"
+                  {...(link.external && {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="cont base-border-color flex justify-center border-r py-6">
+          <div className="relative h-[250px] w-[200px] rounded-xl bg-green-400 shadow-md">
+            <Image
+              src={HeadshotImage}
+              alt="headshot profile"
+              className="h-full w-full rounded-xl object-cover hover:cursor-pointer"
+            />
+          </div>
+        </div>
+        <div className="base-border-color border-r"></div>
+        <div className="base-border-color absolute top-[298px] left-0 w-full border-b"></div>
+      </section>
+    </main>
   );
 }
