@@ -89,6 +89,7 @@ export const projects = [
       "Next.js",
       "TypeScript",
       "Turborepo",
+      "Prisma",
     ],
     status: "in progress",
   },

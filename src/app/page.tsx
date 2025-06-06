@@ -7,6 +7,7 @@ import ServicesCard from "@/components/ServiceCard";
 import { links, projects, services } from "@/constants";
 import ProjectCard from "@/components/ProjectCard";
 import PlusBox from "@/components/ui/PlusBox";
+import HighlightedText from "@/components/ui/HighlightedText";
 
 const socialLinks = [
   {
@@ -53,16 +54,23 @@ export default function HomePage() {
           <OpenToWork />
         </div>
       </section>
-      <section className="relative grid h-[300px] grid-cols-3 px-[300px]">
+      <section className="relative grid h-[450px] grid-cols-3 px-[300px]">
         <div className="base-border-color col-span-2 border-x p-4">
           <h5 className="font-geist-sans mt-3">About me</h5>
           <p className="text-slate-600">
-            I am a Frontend developer who converts eye-catching designs into
-            seamless user experiences.
+            Hi, my name is <HighlightedText>Teyim Asobo</HighlightedText>, I am
+            a <HighlightedText>Frontend developer</HighlightedText> who converts
+            eye-catching designs into seamless user experiences.
           </p>
           <p className="mt-2 text-slate-600">
-            With 4+ years of experience, I provide value to clients by
-            converting client ideas and designs into 1:1 implementations.
+            With <HighlightedText>4+ years of experience</HighlightedText>, I
+            provide value to clients by converting client ideas and designs into
+            1:1 implementations.
+          </p>
+          <p className="mt-2 text-slate-600">
+            I maintain high-quality standards through thorough planning, regular
+            communication, and rigorous testing, ensuring clean, maintainable
+            code that meets modern development standards.
           </p>
           <div className="x-2 mt-4 ml-auto w-1/2">
             <h6 className="mt-3 text-right">Find Me On</h6>
@@ -84,7 +92,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="cont base-border-color pattern-diagonal-bg flex justify-center border-r py-6">
-          <div className="relative h-[250px] w-[200px] rounded-xl bg-green-400 shadow-md">
+          <div className="relative my-auto h-[250px] w-[200px] rounded-xl bg-green-400 shadow-md">
             <Image
               src={HeadshotImage}
               alt="headshot profile"
@@ -92,8 +100,8 @@ export default function HomePage() {
             />
           </div>
         </div>
-        <div className="base-border-color border-r"></div>
-        <div className="base-border-color absolute top-[298px] left-0 w-full border-b"></div>
+
+        <div className="base-border-color absolute top-[450px] left-0 w-full border-b"></div>
       </section>
       <section className="relative grid h-auto grid-cols-1 px-[300px]">
         <div className="base-border-color absolute top-1 left-0 w-full border-b"></div>
@@ -124,8 +132,8 @@ export default function HomePage() {
             <div className="my-2 space-y-2">
               <p className="text-sm text-slate-600">
                 I have successfully completed numerous projects on{" "}
-                <strong>Upwork</strong>, working with diverse clients to deliver
-                high-quality solutions.
+                <HighlightedText highlightColor="">Upwork</HighlightedText>,
+                working with diverse clients to deliver high-quality solutions.
               </p>
 
               <div className="mt-2">
