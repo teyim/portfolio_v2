@@ -62,7 +62,7 @@ const AnimatedLink = ({
               ...pathVariants,
               visible: {
                 ...pathVariants.visible,
-                transition: { duration: 0.4, ease: "easeInOut" },
+                transition: { duration: 0.3, ease: "easeInOut" },
               },
             }}
           />
