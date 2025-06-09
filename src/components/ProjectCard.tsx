@@ -1,11 +1,14 @@
 "use client";
 
+import { Eye } from "lucide-react";
+
 import { StaticImageData } from "next/image";
+import Image from "next/image";
+
+import { Project } from "@/types";
+
 import OutlineBadge from "./ui/OutlineBadge";
 import PlusBox from "./ui/PlusBox";
-import { Project } from "@/types";
-import Image from "next/image";
-import { Eye } from "lucide-react";
 
 export default function ProjectCard({
   name,

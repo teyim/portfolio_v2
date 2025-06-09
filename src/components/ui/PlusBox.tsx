@@ -1,7 +1,10 @@
-import { cn } from "@/lib/utils";
-import React from "react";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+
+import React from "react";
+
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 
 interface PlusBoxProps {
   children: React.ReactNode;
@@ -57,7 +60,7 @@ const PlusBox = ({
       <Link
         href={href}
         className={cn(
-          "group relative inline-block w-auto px-1.5 text-center text-sm/6 font-semibold transition-all duration-300 hover:text-gray-600",
+          "group relative inline-block w-auto cursor-pointer px-1.5 text-center text-sm/6 font-semibold transition-all duration-300 hover:text-gray-600",
           className,
         )}
       >
@@ -69,7 +72,7 @@ const PlusBox = ({
   return (
     <div
       className={cn(
-        "group relative inline-block w-auto px-1.5 text-center text-sm/6 font-semibold",
+        "group relative inline-block w-auto cursor-pointer px-1.5 text-center text-sm/6 font-semibold",
         className,
       )}
     >

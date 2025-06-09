@@ -1,13 +1,18 @@
-import Image from "next/image";
-import React from "react";
-import HeadshotImage from "public/images/headshot.webp";
-import OpenToWork from "@/components/ui/OpenToWork";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
-import ServicesCard from "@/components/ServiceCard";
-import { links, projects, services } from "@/constants";
+import HeadshotImage from "public/images/headshot.webp";
+
+import React from "react";
+
+import Image from "next/image";
+
+import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
-import PlusBox from "@/components/ui/PlusBox";
+import ServicesCard from "@/components/ServiceCard";
+import AnimatedLink from "@/components/ui/AnimatedLink";
 import HighlightedText from "@/components/ui/HighlightedText";
+import OpenToWork from "@/components/ui/OpenToWork";
+import PlusBox from "@/components/ui/PlusBox";
+import { links, projects, services } from "@/constants";
 
 const socialLinks = [
   {
@@ -35,12 +40,18 @@ const socialLinks = [
     icon: <span className="text-sm font-bold">Upwork</span>,
     external: true,
   },
+  {
+    href: "https://dev.to/teyim",
+    icon: <span className="text-sm font-bold">Dev.to</span>,
+    external: true,
+  },
 ];
 
 export default function HomePage() {
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
-      <section className="relative grid h-[150px] grid-cols-3 px-[300px]">
+      <Navbar />
+      <section className="relative grid h-[150px] grid-cols-3 px-[300px] pt-16">
         <div className="base-border-color absolute top-[54px] left-0 w-full border-b"></div>
         <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
         <div className="base-border-color border-x"></div>
@@ -64,8 +75,8 @@ export default function HomePage() {
           </p>
           <p className="mt-2 text-slate-600">
             With <HighlightedText>4+ years of experience</HighlightedText>, I
-            provide value to clients by converting client ideas and designs into
-            1:1 implementations.
+            provide value to clients by converting client ideas into clean,
+            optimised web applications.
           </p>
           <p className="mt-2 text-slate-600">
             I maintain high-quality standards through thorough planning, regular
@@ -76,17 +87,14 @@ export default function HomePage() {
             <h6 className="mt-3 text-right">Find Me On</h6>
             <div className="mt-3 flex justify-end gap-4">
               {socialLinks.map((link, index) => (
-                <a
+                <AnimatedLink
                   key={index}
                   href={link.href}
-                  className="rounded-full p-2 transition-all duration-300 hover:scale-110 hover:bg-slate-50 hover:text-slate-600 hover:shadow-sm"
-                  {...(link.external && {
-                    target: "_blank",
-                    rel: "noopener noreferrer",
-                  })}
+                  isExternal={link.external}
+                  className="p-2"
                 >
                   {link.icon}
-                </a>
+                </AnimatedLink>
               ))}
             </div>
           </div>
@@ -165,8 +173,18 @@ export default function HomePage() {
                 />
               ))}
             </div>
+            <div className="my-5 flex justify-center">
+              <PlusBox
+                isExternal
+                svgFill="fill-gray-400"
+                className="w-40"
+                href=""
+              >
+                View More
+              </PlusBox>
+            </div>
           </div>
-          <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
+          <div className="base-border-color absolute bottom-0 left-0 mt-5 w-full border-b"></div>
         </div>
       </section>
     </main>

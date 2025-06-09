@@ -1,12 +1,12 @@
-import StoreIllustration from "public/images/assets/store-3.svg";
-import WebIllustration from "public/images/assets/web.svg";
+import LogosScreenshot from "public/images/237logos.webp";
 import DataCheckIllustration from "public/images/assets/data-check-double-0.svg";
 import DropDownIllustration from "public/images/assets/dropdown-1.svg";
 import JumpToElementIllustration from "public/images/assets/jump-to-element-2.svg";
+import StoreIllustration from "public/images/assets/store-3.svg";
+import WebIllustration from "public/images/assets/web.svg";
 import BataziaScreenshot from "public/images/batazia.webp";
-import LogosScreenshot from "public/images/237logos.webp";
-import UpworkScreenshot from "public/images/upworkScraper.webp";
 import lomoScreenshot from "public/images/lomo.webp";
+import UpworkScreenshot from "public/images/upworkScraper.webp";
 
 export const links = {
   internal: {},
@@ -92,5 +92,16 @@ export const projects = [
       "Prisma",
     ],
     status: "in progress",
+  },
+];
+
+export const navbarLinks = [
+  {
+    name: "Blog",
+    href: "/blog",
+  },
+  {
+    name: "CV",
+    href: "/",
   },
 ];

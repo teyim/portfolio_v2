@@ -1,8 +1,10 @@
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
-import React from "react";
 import worldIllustration from "public/images/assets/web.svg";
+
+import React from "react";
+
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface ServicesCardProps {
   name: string;
