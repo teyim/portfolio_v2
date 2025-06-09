@@ -14,7 +14,7 @@ const Navbar = ({ className }: NavbarProps) => {
   return (
     <nav
       className={cn(
-        "base-border-color fixed top-0 z-50 mb-8 w-full",
+        "base-border-color fixed top-0 z-50 w-full bg-green-500 container-padding",
         className,
       )}
     >

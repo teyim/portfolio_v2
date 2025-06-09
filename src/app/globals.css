@@ -174,4 +174,7 @@
   .base-border-color {
     @apply border-[var(--border-color)] ring-[var(--ring-color)];
   }
+  .container-padding {
+    @apply px-[300px];
+  }
 }

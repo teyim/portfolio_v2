@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
       <Navbar />
-      <section className="relative grid h-[150px] grid-cols-3 px-[300px] pt-16">
+      <section className="relative grid h-[150px] grid-cols-3 container-padding pt-16">
         <div className="base-border-color absolute top-[54px] left-0 w-full border-b"></div>
         <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
         <div className="base-border-color border-x"></div>
@@ -65,7 +65,7 @@ export default function HomePage() {
           <OpenToWork />
         </div>
       </section>
-      <section className="relative grid h-[450px] grid-cols-3 px-[300px]">
+      <section className="relative grid h-[450px] grid-cols-3 container-padding">
         <div className="base-border-color col-span-2 border-x p-4">
           <h5 className="font-geist-sans mt-3">About me</h5>
           <p className="text-slate-600">
@@ -111,7 +111,7 @@ export default function HomePage() {
 
         <div className="base-border-color absolute top-[450px] left-0 w-full border-b"></div>
       </section>
-      <section className="relative grid h-auto grid-cols-1 px-[300px]">
+      <section className="relative grid h-auto grid-cols-1 container-padding">
         <div className="base-border-color absolute top-1 left-0 w-full border-b"></div>
         <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
         <div className="base-border-color border-x p-4">
@@ -129,7 +129,7 @@ export default function HomePage() {
         </div>
       </section>
       <div className="absolute top-0 right-0 h-full w-8" />
-      <section className="relative px-[300px]">
+      <section className="relative container-padding">
         <div className="base-border-color border-x">
           <div className="base-border-color absolute top-1 left-0 w-full border-b"></div>
           <div className="px-4 pt-4">
