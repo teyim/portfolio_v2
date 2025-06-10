@@ -50,14 +50,14 @@ const socialLinks = [
 export default function HomePage() {
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden">
-      <Navbar />
-      <section className="relative grid h-[150px] grid-cols-3 container-padding pt-16">
-        <div className="base-border-color absolute top-[54px] left-0 w-full border-b"></div>
-        <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
-        <div className="base-border-color border-x"></div>
-        <div className="base-border-color border-r"></div>
-        <div className="base-border-color border-r"></div>
-        <div className="base-border-color absolute top-36 left-0 w-full border-b"></div>
+      
+      <section className="relative grid h-[150px] grid-cols-3 container-padding">
+        <div className=" absolute top-[54px] left-0 w-full border-b"></div>
+        <div className=" absolute bottom-0 left-0 w-full border-b"></div>
+        <div className=" border-x"></div>
+        <div className=" border-r"></div>
+        <div className=" border-r"></div>
+        <div className=" absolute top-36 left-0 w-full border-b"></div>
         <h1 className="font-geist-sans absolute top-5 left-[21vw] text-9xl">
           TEYIM.
         </h1>
@@ -66,7 +66,7 @@ export default function HomePage() {
         </div>
       </section>
       <section className="relative grid h-[450px] grid-cols-3 container-padding">
-        <div className="base-border-color col-span-2 border-x p-4">
+        <div className=" col-span-2 border-x p-4">
           <h5 className="font-geist-sans mt-3">About me</h5>
           <p className="text-slate-600">
             Hi, my name is <HighlightedText>Teyim Asobo</HighlightedText>, I am
@@ -99,7 +99,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="cont base-border-color pattern-diagonal-bg flex justify-center border-r py-6">
+        <div className="  pattern-diagonal-bg flex justify-center border-r py-6">
           <div className="relative my-auto h-[250px] w-[200px] rounded-xl bg-green-400 shadow-md">
             <Image
               src={HeadshotImage}
@@ -109,12 +109,12 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="base-border-color absolute top-[450px] left-0 w-full border-b"></div>
+        <div className=" absolute top-[450px] left-0 w-full border-b"></div>
       </section>
       <section className="relative grid h-auto grid-cols-1 container-padding">
-        <div className="base-border-color absolute top-1 left-0 w-full border-b"></div>
-        <div className="base-border-color absolute bottom-0 left-0 w-full border-b"></div>
-        <div className="base-border-color border-x p-4">
+        <div className=" absolute top-1 left-0 w-full border-b"></div>
+        <div className=" absolute bottom-0 left-0 w-full border-b"></div>
+        <div className=" border-x p-4">
           <h5 className="font-geist-sans mt-3">My Services</h5>
           <div className="mt-4 grid grid-cols-2 gap-4">
             {services.map((service, idx) => (
@@ -129,9 +129,9 @@ export default function HomePage() {
         </div>
       </section>
       <div className="absolute top-0 right-0 h-full w-8" />
-      <section className="relative container-padding">
-        <div className="base-border-color border-x">
-          <div className="base-border-color absolute top-1 left-0 w-full border-b"></div>
+      <section className="relative px-[300px]">
+        <div className=" border-x">
+          <div className=" absolute top-1 left-0 w-full border-b"></div>
           <div className="px-4 pt-4">
             <h4 className="font-geist-sans mt-3">Projects</h4>
           </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
               </PlusBox>
             </div>
           </div>
-          <div className="base-border-color absolute bottom-0 left-0 mt-5 w-full border-b"></div>
+          <div className=" absolute bottom-0 left-0 mt-5 w-full border-b"></div>
         </div>
       </section>
     </main>
