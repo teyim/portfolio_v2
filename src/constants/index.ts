@@ -97,7 +97,7 @@ export const projects = [
 
 export const navbarLinks = [
   {
-    name: "Blog",
+    name: "BLOG",
     href: "/blog",
     icon: "BookOpen",
   },
