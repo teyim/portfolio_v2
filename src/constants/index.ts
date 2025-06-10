@@ -99,9 +99,11 @@ export const navbarLinks = [
   {
     name: "Blog",
     href: "/blog",
+    icon: "BookOpen",
   },
   {
     name: "CV",
     href: "/",
+    icon: "FileText",
   },
 ];

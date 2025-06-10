@@ -41,7 +41,7 @@ const AnimatedLink = ({
       href={href}
       rel={isExternal ? "noopener noreferrer" : undefined}
       className={cn(
-        "group relative inline-flex items-center text-slate-600 transition-col duration-300 hover:text-sky-500",
+        "group relative inline-flex items-center transition-col duration-300 hover:text-sky-500",
         className,
       )}
     >
