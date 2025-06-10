@@ -49,9 +49,8 @@ const socialLinks = [
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen w-full overflow-x-hidden">
-      
-      <section className="relative grid h-[150px] grid-cols-3 container-padding">
+    <main className="relative min-h-screen w-full overflow-hidden -mt-3">
+      <section className="relative grid h-[150px] grid-cols-3 container-padding -mt-12 ">
         <div className=" absolute top-[54px] left-0 w-full border-b"></div>
         <div className=" absolute bottom-0 left-0 w-full border-b"></div>
         <div className=" border-x"></div>
@@ -129,8 +128,8 @@ export default function HomePage() {
         </div>
       </section>
       <div className="absolute top-0 right-0 h-full w-8" />
-      <section className="relative px-[300px]">
-        <div className=" border-x">
+      <section className="relative px-[300px]  ">
+        <div className="border-x pb-6">
           <div className=" absolute top-1 left-0 w-full border-b"></div>
           <div className="px-4 pt-4">
             <h4 className="font-geist-sans mt-3">Projects</h4>

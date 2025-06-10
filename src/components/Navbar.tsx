@@ -20,11 +20,11 @@ const Navbar = ({ className }: NavbarProps) => {
   return (
     <nav
       className={cn(
-        "base-border-color fixed top-0 z-50 w-full container-padding backdrop-blur-sm bg-white/70 dark:bg-slate-950/70",
+        "base-border-color  fixed top-0 z-50 w-full container-padding backdrop-blur-sm bg-white/70 dark:bg-slate-950/70",
         className,
       )}
     >
-      <div className="mx-auto flex h-13 max-w-7xl items-center justify-between px-4 pattern-diagonal-bg ">
+      <div className="mx-auto border-x flex h-13 max-w-7xl items-center justify-between px-4 pattern-diagonal-bg ">
         <div className="flex items-center space-x-8 w-[67%] ">
           <div className="hidden md:flex w-full justify-end space-x-16 p-3">
             {navbarLinks.map((link, id) => (
