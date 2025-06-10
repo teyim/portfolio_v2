@@ -80,6 +80,7 @@
   --pattern-fg: color-mix(in oklab, var(--color-gray-950) 8%, transparent);
   --border-color: rgb(3 7 18 / 0.08);
   --ring-color: rgb(3 7 18 / 0.08);
+ 
 }
 
 .dark {
@@ -120,7 +121,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply outline-ring/50 border-[var(--border-color)] ring-[var(--ring-color)];
   }
   body {
     @apply bg-background text-foreground;
@@ -171,9 +172,6 @@
 }
 
 @layer components {
-  .base-border-color {
-    @apply border-[var(--border-color)] ring-[var(--ring-color)];
-  }
   .container-padding {
     @apply px-[300px];
   }
