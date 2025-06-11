@@ -165,6 +165,14 @@
       transparent 1px 6px
     );
   }
+  .pattern-dotted-bg {
+    background-image: radial-gradient(
+      circle at center,
+      var(--pattern-fg) 1px,
+      transparent 1px
+    );
+    background-size: 12px 12px;
+  }
   .animate-glow-sweep {
     position: absolute;
     animation: glow-sweep 1.5s linear forwards;

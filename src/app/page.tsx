@@ -1,11 +1,13 @@
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import HeadshotImage from "public/images/headshot.webp";
 
+
+
 import React from "react";
 
 import Image from "next/image";
 
-import Navbar from "@/components/Navbar";
+import ExperienceSection from "@/components/ExperienceSection";
 import ProjectCard from "@/components/ProjectCard";
 import ServicesCard from "@/components/ServiceCard";
 import AnimatedLink from "@/components/ui/AnimatedLink";
@@ -13,6 +15,10 @@ import HighlightedText from "@/components/ui/HighlightedText";
 import OpenToWork from "@/components/ui/OpenToWork";
 import PlusBox from "@/components/ui/PlusBox";
 import { links, projects, services } from "@/constants";
+
+
+
+
 
 const socialLinks = [
   {
@@ -182,6 +188,14 @@ export default function HomePage() {
                 View More
               </PlusBox>
             </div>
+          </div>
+          <div className=" absolute bottom-0 left-0 mt-5 w-full border-b"></div>
+        </div>
+      </section>
+      <section className="relative container-padding">
+        <div className="border-x pb-6">
+          <div>
+            <ExperienceSection />
           </div>
           <div className=" absolute bottom-0 left-0 mt-5 w-full border-b"></div>
         </div>
