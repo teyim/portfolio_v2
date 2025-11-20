@@ -13,6 +13,7 @@ interface AnimatedLinkProps {
   children: React.ReactNode;
   className?: string;
   isExternal?: boolean;
+  onClick?: () => void;
 }
 
 const AnimatedLink = ({
@@ -20,6 +21,7 @@ const AnimatedLink = ({
   children,
   className,
   isExternal = false,
+  onClick,
 }: AnimatedLinkProps) => {
   const pathVariants = {
     hidden: {
@@ -40,6 +42,7 @@ const AnimatedLink = ({
     <Link
       href={href}
       rel={isExternal ? "noopener noreferrer" : undefined}
+      onClick={onClick}
       className={cn(
         "group relative inline-flex items-center transition-col duration-300 hover:text-sky-500",
         className,

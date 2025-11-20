@@ -44,9 +44,9 @@ const experiences: ExperienceData[] = [
 
 const ExperienceSection = () => {
   return (
-    <section className="p-6">
-      <h2 className="mb-8 text-2xl font-bold">Experience</h2>
-      <div className="space-y-8">
+    <section className="p-4 sm:p-6">
+      <h2 className="mb-6 sm:mb-8 text-xl sm:text-2xl font-bold">Experience</h2>
+      <div className="space-y-6 sm:space-y-8">
         {experiences.map((experience, index) => (
           <React.Fragment key={experience.company}>
             <ExperienceCard

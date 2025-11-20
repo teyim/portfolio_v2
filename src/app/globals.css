@@ -178,6 +178,6 @@
 
 @layer components {
   .container-padding {
-    @apply px-[300px];
+    @apply px-4 sm:px-8 md:px-16 lg:px-32 xl:px-[300px];
   }
 }

@@ -56,22 +56,22 @@ const socialLinks = [
 export default function HomePage() {
   return (
     <main className="relative min-h-screen w-full overflow-hidden -mt-3">
-      <section className="relative grid h-[150px] grid-cols-3 container-padding -mt-12 ">
+      <section className="relative grid h-[150px] sm:h-[150px] md:h-[150px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 container-padding -mt-12 ">
         <div className=" absolute top-[54px] left-0 w-full border-b"></div>
         <div className=" absolute bottom-0 left-0 w-full border-b"></div>
         <div className=" border-x"></div>
-        <div className=" border-r"></div>
-        <div className=" border-r"></div>
+        <div className=" border-r hidden sm:block"></div>
+        <div className=" border-r hidden md:block"></div>
         <div className=" absolute top-36 left-0 w-full border-b"></div>
-        <h1 className="font-geist-sans absolute top-5 left-[21vw] text-9xl">
+        <h1 className="font-geist-sans absolute top-5 left-4 sm:left-[15vw] md:left-[18vw] lg:left-[21vw] text-4xl sm:text-6xl md:text-7xl lg:text-9xl">
           TEYIM.
         </h1>
-        <div className="absolute top-16 left-[48vw] flex gap-2">
+        <div className="absolute top-20 sm:top-16 left-4 sm:left-[45vw] md:left-[48vw] flex gap-2">
           <OpenToWork />
         </div>
       </section>
-      <section className="relative grid h-[450px] grid-cols-3 container-padding">
-        <div className=" col-span-2 border-x p-4">
+      <section className="relative grid min-h-[450px] h-auto grid-cols-1 lg:grid-cols-3 container-padding">
+        <div className="col-span-1 lg:col-span-2 border-x p-4">
           <h5 className="font-geist-sans mt-3">About me</h5>
           <p className="text-slate-600">
             Hi, my name is <HighlightedText>Teyim Asobo</HighlightedText>, I am
@@ -88,9 +88,9 @@ export default function HomePage() {
             communication, and rigorous testing, ensuring clean, maintainable
             code that meets modern development standards.
           </p>
-          <div className="x-2 mt-4 ml-auto w-1/2">
+          <div className="x-2 mt-4 ml-auto w-full sm:w-3/4 lg:w-1/2">
             <h6 className="mt-3 text-right">Find Me On</h6>
-            <div className="mt-3 flex justify-end gap-4">
+            <div className="mt-3 flex justify-end gap-2 sm:gap-4 flex-wrap">
               {socialLinks.map((link, index) => (
                 <AnimatedLink
                   key={index}
@@ -104,8 +104,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        <div className="  pattern-diagonal-bg flex justify-center border-r py-6">
-          <div className="relative my-auto h-[250px] w-[200px] rounded-xl bg-green-400 shadow-md">
+        <div className="pattern-diagonal-bg flex justify-center border-x lg:border-l-0 lg:border-r py-6 min-h-[300px]">
+          <div className="relative my-auto h-[250px] w-[200px] sm:h-[300px] sm:w-[240px] rounded-xl bg-green-400 shadow-md">
             <Image
               src={HeadshotImage}
               alt="headshot profile"
@@ -114,14 +114,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className=" absolute top-[450px] left-0 w-full border-b"></div>
+        <div className=" absolute bottom-0 left-0 w-full border-b"></div>
       </section>
       <section className="relative grid h-auto grid-cols-1 container-padding">
         <div className=" absolute top-1 left-0 w-full border-b"></div>
         <div className=" absolute bottom-0 left-0 w-full border-b"></div>
         <div className=" border-x p-4">
           <h5 className="font-geist-sans mt-3">My Services</h5>
-          <div className="mt-4 grid grid-cols-2 gap-4">
+          <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
             {services.map((service, idx) => (
               <ServicesCard
                 key={idx}
@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
       </section>
       <div className="absolute top-0 right-0 h-full w-8" />
-      <section className="relative px-[300px]  ">
+      <section className="relative container-padding">
         <div className="border-x pb-6">
           <div className=" absolute top-1 left-0 w-full border-b"></div>
           <div className="px-4 pt-4">
@@ -154,7 +154,7 @@ export default function HomePage() {
                   href={links.external.upworkProfile}
                   isExternal
                   svgFill="fill-gray-400"
-                  className="w-60"
+                  className="w-full sm:w-60"
                 >
                   View Upwork Profile
                 </PlusBox>
@@ -165,7 +165,7 @@ export default function HomePage() {
             <div className="px-4">
               <h6>Personal Projects</h6>
             </div>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
               {projects.map((project, index) => (
                 <ProjectCard
                   key={index}
@@ -182,7 +182,7 @@ export default function HomePage() {
               <PlusBox
                 isExternal
                 svgFill="fill-gray-400"
-                className="w-40"
+                className="w-full sm:w-40"
                 href=""
               >
                 View More

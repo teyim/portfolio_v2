@@ -63,7 +63,7 @@ function ServicesCard({ name, description, illustration }: ServicesCardProps) {
         whileTap={{ scale: 0.98 }}
         className=" base-border-color relative flex h-full overflow-hidden rounded-xl p-4 shadow-sm ring-1 transition-shadow duration-300 hover:shadow-md hover:ring-gray-950/35"
       >
-        <div className="flex h-full w-[80%] flex-col justify-between space-y-2 text-left">
+        <div className="flex h-full w-full sm:w-[80%] flex-col justify-between space-y-2 text-left">
           <div className="space-y-2">
             <motion.h6
               className="text-sm"
@@ -93,7 +93,7 @@ function ServicesCard({ name, description, illustration }: ServicesCardProps) {
           </motion.div>
         </div>
         <motion.div
-          className="absolute -right-4 h-35 w-35"
+          className="absolute -right-4 sm:-right-4 h-24 w-24 sm:h-35 sm:w-35 opacity-20 sm:opacity-100"
           initial={{ opacity: 0.2, scale: 0.8 }}
           animate={{ opacity: 0.2, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}

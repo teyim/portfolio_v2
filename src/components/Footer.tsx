@@ -22,9 +22,9 @@ const Footer = ({ className }: FooterProps) => {
         className,
       )}
     >
-      <div className="mx-auto flex h-13 max-w-7xl items-center justify-between px-4 pattern-diagonal-bg border-x">
+      <div className="mx-auto flex flex-col sm:flex-row h-auto sm:h-13 max-w-7xl items-center justify-between px-4 py-4 sm:py-0 pattern-diagonal-bg border-x gap-4 sm:gap-0">
         <div className="flex items-center">
-          <p className="text-sm text-slate-600 dark:text-slate-400">
+          <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 text-center sm:text-left">
             © {currentYear} Teyim Asobo. All rights reserved.
           </p>
         </div>

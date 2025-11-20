@@ -107,3 +107,78 @@ export const navbarLinks = [
     icon: "FileText",
   },
 ];
+
+export const blogPosts = [
+  {
+    id: "1",
+    title: "Building Scalable React Applications with TypeScript",
+    excerpt:
+      "Learn best practices for structuring large-scale React applications with TypeScript, including type safety patterns and performance optimization techniques.",
+    author: "Teyim Asobo",
+    date: "2024-01-15",
+    readTime: "8 min read",
+    tags: ["React", "TypeScript", "Web Development"],
+    slug: "building-scalable-react-applications",
+    published: true,
+  },
+  {
+    id: "2",
+    title: "Modern CSS Techniques: Grid and Flexbox Mastery",
+    excerpt:
+      "Deep dive into CSS Grid and Flexbox layouts, exploring practical examples and use cases for creating responsive, modern web designs.",
+    author: "Teyim Asobo",
+    date: "2024-01-10",
+    readTime: "6 min read",
+    tags: ["CSS", "Web Design", "Frontend"],
+    slug: "modern-css-techniques-grid-flexbox",
+    published: true,
+  },
+  {
+    id: "3",
+    title: "Next.js 14: Server Components and App Router",
+    excerpt:
+      "Explore the new features in Next.js 14, including React Server Components, the App Router, and how to migrate your existing applications.",
+    author: "Teyim Asobo",
+    date: "2024-01-05",
+    readTime: "10 min read",
+    tags: ["Next.js", "React", "Server Components"],
+    slug: "nextjs-14-server-components",
+    published: true,
+  },
+  {
+    id: "4",
+    title: "Mastering Tailwind CSS: Advanced Patterns",
+    excerpt:
+      "Discover advanced Tailwind CSS patterns, custom configurations, and how to build a scalable design system for your projects.",
+    author: "Teyim Asobo",
+    date: "2023-12-28",
+    readTime: "7 min read",
+    tags: ["Tailwind CSS", "CSS", "Design Systems"],
+    slug: "mastering-tailwind-css-advanced-patterns",
+    published: true,
+  },
+  {
+    id: "5",
+    title: "Web Performance Optimization: A Complete Guide",
+    excerpt:
+      "Comprehensive guide to optimizing web performance, covering Core Web Vitals, lazy loading, code splitting, and caching strategies.",
+    author: "Teyim Asobo",
+    date: "2023-12-20",
+    readTime: "12 min read",
+    tags: ["Performance", "Web Development", "Optimization"],
+    slug: "web-performance-optimization-guide",
+    published: true,
+  },
+  {
+    id: "6",
+    title: "Building Chrome Extensions with React",
+    excerpt:
+      "Step-by-step guide to building powerful Chrome extensions using React, including manifest v3 updates and best practices.",
+    author: "Teyim Asobo",
+    date: "2023-12-15",
+    readTime: "9 min read",
+    tags: ["Chrome Extensions", "React", "JavaScript"],
+    slug: "building-chrome-extensions-react",
+    published: true,
+  },
+];
